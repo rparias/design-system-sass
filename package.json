@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/rparias/design-system-sass/issues"
   },
-  "homepage": "https://github.com/rparias/design-system-sass#readme"
+  "homepage": "https://github.com/rparias/design-system-sass#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
+  }
 }

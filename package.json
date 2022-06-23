@@ -1,0 +1,20 @@
+{
+  "name": "design-system-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rparias/design-system-sass.git"
+  },
+  "keywords": [],
+  "author": "Ronald Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rparias/design-system-sass/issues"
+  },
+  "homepage": "https://github.com/rparias/design-system-sass#readme"
+}

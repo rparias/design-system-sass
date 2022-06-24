@@ -6,13 +6,13 @@ const { src, dest, watch, series } = gulp
 const sass = gulpSass(nodeSass)
 
 const buildStyles = () => {
-  return src('*.scss')
+  return src('shinobi/**/*.scss')
         .pipe(sass())
         .pipe(dest('css'))
 }
 
 const watchTask = () => {
-  watch(['*.scss'], buildStyles)
+  watch(['shinobi/**/*.scss'], buildStyles)
 }
 
 export default series(buildStyles, watchTask)

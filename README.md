@@ -8,3 +8,10 @@ It's important to install Gulp for running this project.
 ```bash
 npm install --global gulp-cli
 ```
+
+When gulp installed, execute the following command in the root to generate the css styles:
+```bash
+gulp
+```
+
+For a better experience, use the Live Server extension in Visual Studio Code.

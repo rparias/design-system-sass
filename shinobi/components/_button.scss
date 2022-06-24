@@ -29,4 +29,14 @@
       background-color: $val;
     }
   }
+
+  .btn-complement-#{$key} {
+    @include btn($val);
+    color: light-complement($val);
+
+    &:hover {
+      color: $val;
+      background-color: light-complement($val);
+    }
+  }
 }

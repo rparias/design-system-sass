@@ -1,0 +1,32 @@
+@mixin btn($bg-color: #e2e2e2) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: $base-padding $base-padding * 2;
+  border-radius: $base-border-radius;
+  background-color: $bg-color;
+}
+
+.btn {
+  @include btn; // this will take the default value #e2e2e2
+}
+
+@each $key, $val in $colors {
+  .btn-#{$key} {
+    @include btn($val);
+
+    &:hover {
+      background-color: lighten($color: $val, $amount: 5);
+    }
+  }
+
+  .btn-outlined-#{$key} {
+    @include btn(white);
+    border: $base-border-thickness solid $val;
+
+    &:hover {
+      background-color: $val;
+    }
+  }
+}

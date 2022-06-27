@@ -9,6 +9,8 @@ $grid-gaps: (
   "3": 30px
 );
 
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -31,6 +33,13 @@ $grid-gaps: (
   .gap-#{$key} { // removes the gap on left and right sides
     margin-left: -$val;
     margin-right: -$val;
+  }
+}
+
+// justify content classes
+@each $val in $layout-values {
+  .justify-#{$val} {
+    justify-content: $val;
   }
 }
 

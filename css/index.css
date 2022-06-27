@@ -80,6 +80,26 @@ img {
   margin-right: -30px;
 }
 
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
 @media (min-width: 0) {
   .col-1-xs {
     box-sizing: border-box;

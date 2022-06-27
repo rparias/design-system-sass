@@ -7,14 +7,14 @@ const { src, dest, watch, series } = gulp
 const sass = gulpSass(nodeSass)
 
 const buildStyles = () => {
-  return src('shinobi/**/*.scss')
+  return src('sass/**/*.scss')
         .pipe(sass())
         .pipe(purgecss({ content: ['*.html'] }))
         .pipe(dest('css'))
 }
 
 const watchTask = () => {
-  watch(['shinobi/**/*.scss', '*.html'], buildStyles)
+  watch(['sass/**/*.scss', '*.html'], buildStyles)
 }
 
 export default series(buildStyles, watchTask)

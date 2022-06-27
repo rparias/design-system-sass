@@ -2,6 +2,13 @@
 
 $grid-columns: 12;
 
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px
+);
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -13,6 +20,18 @@ $grid-columns: 12;
 .row {
   display: flex;
   flex-flow: row wrap;
+}
+
+// grid gaps
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * { // all of the items inside the gap-3 for example
+    padding: $val;
+  }
+
+  .gap-#{$key} { // removes the gap on left and right sides
+    margin-left: -$val;
+    margin-right: -$val;
+  }
 }
 
 // col classes

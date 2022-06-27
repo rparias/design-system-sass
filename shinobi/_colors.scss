@@ -15,7 +15,7 @@
 
   @if ($val != black and $val != white) {
     // light variations
-    @for $i from 1 to 9 {
+    @for $i from 1 through 9 {
       .text-#{$key}-light-#{$i} {
         color: mix(white, $val, $weight: $i * 10);
       }
@@ -32,7 +32,7 @@
     }
 
     // dark variations
-    @for $i from 1 to 9 {
+    @for $i from 1 through 9 {
       .text-#{$key}-dark-#{$i} {
         color: mix(black, $val, $weight: $i * 10);
       }
